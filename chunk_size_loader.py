@@ -13,6 +13,7 @@ exec_shell=commands.getstatusoutput
 
 
 #Splits the file in the parent process and commnuicate the content through pipe
+#provide the number of lines as the input to aplit the file
 
 is_file_avail  = True
 is_init = True
