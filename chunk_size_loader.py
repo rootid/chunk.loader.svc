@@ -58,9 +58,9 @@ def exec_sql_load_process () :
     #fd = open ('/tmp/testpipe') 
     #for line in fd :
     #    print line
-    err_file_path='/tmp/db2_extract_err'
+    err_file_path='/tmp/db_log_extract_err'
     load_file_path = 'load.sql'
-    db2_cmd = ("db_cli < %s 2>> %s")%(load_file_path,err_file_path)
+    db_cmd = ("db_cli < %s 2>> %s")%(load_file_path,err_file_path)
     (status,output) = exec_shell(db2_cmd)
     print status
     print output
